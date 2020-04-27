@@ -3,7 +3,7 @@
 #' Randomly place circular plots, with a given radius, within an sf object, so that the plots will not overlap.
 #' @param n Sample size of plots to be included.
 #' @param inner_polygon Area that the centre of plots should be randomised within
-#' @param radius Radius of the requested plot(s) in metres
+#' @param radius Radius of the requested plot(s)
 #' @param outer_polygon Area that the entirety of the plot should be randomised within. NB - This can be the same as the inner polygon
 #' @keywords circular plots
 #' @export
