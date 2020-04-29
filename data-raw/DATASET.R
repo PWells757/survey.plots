@@ -1,3 +1,3 @@
 ## code to prepare `DATASET` dataset goes here
-Soton <- Soton <- readRDS("data-raw/Soton")
+Soton <- sf::st_read(dsn = "Local_authority_districts_Soton", layer = "Soton")
 usethis::use_data(Soton)
