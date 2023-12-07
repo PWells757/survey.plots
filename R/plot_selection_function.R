@@ -11,7 +11,8 @@
 #' plot_selection(n=450, inner_polygon=Soton, radius=11.4, outer_polygon=Soton)
 
 #Repeat function with adjustable shp file
-plot_selection <- function(n, inner_polygon, radius, outer_polygon=NULL) {
+plot_selection <- function(n, inner_polygon, radius, outer_polygon=NULL,seed=NULL) {
+    set.seed(seed)
   #Create line version of outer polygon for measurements if outer polygon entered
   if (!is.null(outer_polygon)) {
     poly_line <- st_cast(outer_polygon, "MULTILINESTRING")
